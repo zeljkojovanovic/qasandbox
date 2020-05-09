@@ -1,0 +1,10 @@
+{
+  "title": "title",
+  "teststeps": [
+    "first step",
+    "second step"
+  ],
+  "expected_result": "expected result",
+  "description": "description",
+  "automated": true
+}

@@ -1,7 +1,12 @@
 package utils;
 
 import static rs.htec.apps.qasandbox.map.Mapper.mapFromJSON;
+import static rs.htec.apps.qasandbox.map.Mapper.mapFromJsonArray;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import java.util.List;
+import rs.htec.apps.qasandbox.qa.model.AllUseCasesResponse;
 import rs.htec.apps.qasandbox.qa.model.LoginErrorResponse;
 import rs.htec.apps.qasandbox.qa.model.LoginResponse;
 import rs.htec.apps.qasandbox.http.HTTPMethod;
@@ -9,6 +14,8 @@ import rs.htec.apps.qasandbox.http.HTTPRequest;
 import rs.htec.apps.qasandbox.http.HTTPResponse;
 import rs.htec.apps.qasandbox.qa.model.ResetPasswordErrorResponse;
 import rs.htec.apps.qasandbox.qa.model.ResetPasswordResponse;
+import rs.htec.apps.qasandbox.qa.model.UseCaseRequest;
+import rs.htec.apps.qasandbox.qa.model.UseCaseResponse;
 
 public class Methods {
 
@@ -50,6 +57,24 @@ public class Methods {
     if (!response.code.equals(400))
       throw new Exception("Reset password did not return '400'. Code: " + response.getCode() + " | Message: " + response.getBody());
     return mapFromJSON(response.body, ResetPasswordErrorResponse.class);
+  }
+
+  public static UseCaseResponse addUseCase(UseCaseRequest useCaseRequest, String token) throws Exception {
+    String url = "https://qa-sandbox.apps.htec.rs/api/usecases/usecase";
+    HTTPRequest request = new HTTPRequest(url).setMethod(HTTPMethod.POST).setBody(new Gson().toJson(useCaseRequest)).setContentType("application/json").setBearerAuthorization(token);
+    HTTPResponse response = request.sendRequest();
+    if (!response.code.equals(200))
+      throw new Exception("Creating use case failed. Code: " + response.getCode() + " | Message: " + response.getBody());
+    return mapFromJSON(response.body, UseCaseResponse.class);
+  }
+
+  public static List<AllUseCasesResponse> retrieveAllUseCases(String token) throws Exception {
+    String url = "https://qa-sandbox.apps.htec.rs/api/usecases/all";
+    HTTPRequest request = new HTTPRequest(url).setMethod(HTTPMethod.GET).setContentType("application/json").setBearerAuthorization(token);
+    HTTPResponse response = request.sendRequest();
+    if (!response.code.equals(200))
+      throw new Exception("Retrieving all use cases failed. Code: " + response.getCode() + " | Message: " + response.getBody());
+    return mapFromJsonArray(response.body,AllUseCasesResponse[].class);
   }
 
 }

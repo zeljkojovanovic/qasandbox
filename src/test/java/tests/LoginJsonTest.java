@@ -74,8 +74,8 @@ public class LoginJsonTest {
   }
 
   @Test
-  public void loginWithInvalidUsername() throws Exception {
-    //login with invalid username:
+  public void loginWithNonExistingUsername() throws Exception {
+    //login with non existing username:
     LoginErrorResponse loginErrorResponse = Methods.loginError("jovanovic.zeljko1@outlook.com","Test1234",404);
     //verify that error 'User not found' is displayed for 'email' field:
     AssertJUnit.assertEquals("Error message is not correct for 'email' field","User not found", loginErrorResponse.getEmail());
