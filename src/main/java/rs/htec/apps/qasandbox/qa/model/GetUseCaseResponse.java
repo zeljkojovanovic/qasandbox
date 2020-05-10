@@ -3,10 +3,12 @@ package rs.htec.apps.qasandbox.qa.model;
 import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
-public class UseCaseResponse {
+public class GetUseCaseResponse {
 
   @SerializedName("user_id")
   private int userId;
+  @SerializedName("usecase_id")
+  private int useCaseId;
   @SerializedName("automated")
   private boolean automated;
   @SerializedName("title")
@@ -18,9 +20,12 @@ public class UseCaseResponse {
   @SerializedName("teststeps")
   private List<String> teststeps;
 
-  public UseCaseResponse(int userId, boolean automated, String title, String expectedResult,
-      String description, List<String> teststeps) {
+  public GetUseCaseResponse() {
+  }
+
+  public GetUseCaseResponse(int userId, int useCaseId, boolean automated, String title, String expectedResult, String description, List<String> teststeps) {
     this.userId = userId;
+    this.useCaseId = useCaseId;
     this.automated = automated;
     this.title = title;
     this.expectedResult = expectedResult;
@@ -34,6 +39,14 @@ public class UseCaseResponse {
 
   public void setUserId(int userId) {
     this.userId = userId;
+  }
+
+  public int getUseCaseId() {
+    return useCaseId;
+  }
+
+  public void setUseCaseId(int useCaseId) {
+    this.useCaseId = useCaseId;
   }
 
   public boolean isAutomated() {

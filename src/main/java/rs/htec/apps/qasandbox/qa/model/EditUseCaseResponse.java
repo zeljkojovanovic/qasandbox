@@ -1,38 +1,31 @@
 package rs.htec.apps.qasandbox.qa.model;
 
 import com.google.gson.annotations.SerializedName;
+import java.util.List;
 
-public class AllUseCasesResponse {
+public class EditUseCaseResponse {
 
-  @SerializedName("usecase_id")
-  private int usecaseId;
   @SerializedName("user_id")
   private int userId;
+  @SerializedName("automated")
+  private boolean automated;
   @SerializedName("title")
   private String title;
   @SerializedName("expected_result")
   private String expectedResult;
   @SerializedName("description")
   private String description;
-  @SerializedName("automated")
-  private boolean automated;
+  @SerializedName("teststeps")
+  private List<String> teststeps;
 
-  public AllUseCasesResponse(int usecaseId, int userId, String title, String expectedResult,
-      String description, boolean automated) {
-    this.usecaseId = usecaseId;
+  public EditUseCaseResponse(int userId, boolean automated, String title, String expectedResult,
+      String description, List<String> teststeps) {
     this.userId = userId;
+    this.automated = automated;
     this.title = title;
     this.expectedResult = expectedResult;
     this.description = description;
-    this.automated = automated;
-  }
-
-  public int getUsecaseId() {
-    return usecaseId;
-  }
-
-  public void setUsecaseId(int usecaseId) {
-    this.usecaseId = usecaseId;
+    this.teststeps = teststeps;
   }
 
   public int getUserId() {
@@ -41,6 +34,14 @@ public class AllUseCasesResponse {
 
   public void setUserId(int userId) {
     this.userId = userId;
+  }
+
+  public boolean isAutomated() {
+    return automated;
+  }
+
+  public void setAutomated(boolean automated) {
+    this.automated = automated;
   }
 
   public String getTitle() {
@@ -67,11 +68,11 @@ public class AllUseCasesResponse {
     this.description = description;
   }
 
-  public boolean isAutomated() {
-    return automated;
+  public List<String> getTeststeps() {
+    return teststeps;
   }
 
-  public void setAutomated(boolean automated) {
-    this.automated = automated;
+  public void setTeststeps(List<String> teststeps) {
+    this.teststeps = teststeps;
   }
 }

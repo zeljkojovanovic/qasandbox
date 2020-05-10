@@ -5,13 +5,14 @@ import org.testng.annotations.Test;
 import rs.htec.apps.qasandbox.qa.model.ResetPasswordErrorResponse;
 import rs.htec.apps.qasandbox.qa.model.ResetPasswordResponse;
 import utils.Methods;
+import utils.User;
 
 public class ResetPasswordJsonTest {
 
   @Test
   public void resetPassword() throws Exception {
     //reset password by entering existing email address:
-    String username = "jovanovic.zeljko@outlook.com";
+    String username = User.USER_ZELJKO.getUsername();
     ResetPasswordResponse resetPasswordResponse = Methods.resetPassword(username);
     //verify that 'success' field has 'Email successfully sent' value:
     AssertJUnit.assertEquals("'success' field does not have correct message","Email successfully sent", resetPasswordResponse.getSuccess());
@@ -28,7 +29,7 @@ public class ResetPasswordJsonTest {
   @Test (enabled =  false) //this test is disabled as there is bug present for this case
   public void resetPasswordForNonExistingUser() throws Exception {
     //reset password without entering an email address:
-    ResetPasswordErrorResponse resetPasswordErrorResponse = Methods.resetPasswordError("jovanovic.zeljko1@outlook.com");
+    ResetPasswordErrorResponse resetPasswordErrorResponse = Methods.resetPasswordError("jovanovic.zeljko@outlook1.com");
     //verify that error is displayed for 'email' field:
     AssertJUnit.assertNotNull("Error message is displayed for 'email' field", resetPasswordErrorResponse.getEmail());
   }

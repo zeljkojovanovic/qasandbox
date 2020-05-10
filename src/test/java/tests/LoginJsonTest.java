@@ -5,11 +5,12 @@ import org.testng.annotations.Test;
 import rs.htec.apps.qasandbox.qa.model.LoginErrorResponse;
 import rs.htec.apps.qasandbox.qa.model.LoginResponse;
 import utils.Methods;
+import utils.User;
 
 public class LoginJsonTest {
 
-  private String username = "jovanovic.zeljko@outlook.com";
-  private String password = "Joel2020";
+  private String username = User.USER_ZELJKO.getUsername();
+  private String password = User.USER_ZELJKO.getPassword();
 
   @Test
   public void loginWithCorrectUsernameAndPassword() throws Exception {
@@ -76,7 +77,7 @@ public class LoginJsonTest {
   @Test
   public void loginWithNonExistingUsername() throws Exception {
     //login with non existing username:
-    LoginErrorResponse loginErrorResponse = Methods.loginError("jovanovic.zeljko1@outlook.com","Test1234",404);
+    LoginErrorResponse loginErrorResponse = Methods.loginError("jovanovic.zeljko@outlook1.com","Test1234",404);
     //verify that error 'User not found' is displayed for 'email' field:
     AssertJUnit.assertEquals("Error message is not correct for 'email' field","User not found", loginErrorResponse.getEmail());
     //verify that there is no error for 'password' field:

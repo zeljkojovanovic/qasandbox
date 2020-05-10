@@ -2,20 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93847847-6290-4c88-90eb-6ec16caa4ae4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/AllUseCasesResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/UseCaseRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/UseCaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AddUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/FilePaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testJsons/useCase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/DeleteUseCaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/GetUseCaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DeleteUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/EditUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Host.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/ServiceMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/AllUseCasesResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/AllUseCasesResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/UseCaseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/AddUseCaseRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/UseCaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/EditUseCaseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginJsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginJsonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ResetPasswordJsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ResetPasswordJsonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/FilePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/FilePaths.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/LoginJsonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/LoginJsonTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/ResetPasswordJsonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/ResetPasswordJsonTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rs/htec/apps/qasandbox/qa/model/AllUseCasesResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rs/htec/apps/qasandbox/qa/model/AllUseCasesResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rs/htec/apps/qasandbox/qa/model/UseCaseRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rs/htec/apps/qasandbox/qa/model/UseCaseResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/AddUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/AddUseCase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utils/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/Methods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testJsons/useCase.json" beforeDir="false" afterPath="$PROJECT_DIR$/testJsons/addUseCase.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,12 +34,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginJsonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+            <state relative-caret-position="1360">
+              <caret line="83" column="78" lean-forward="true" selection-start-line="83" selection-start-column="78" selection-end-line="83" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/ResetPasswordJsonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-85">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/Methods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="76" column="71" lean-forward="true" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
+            <state relative-caret-position="153">
+              <caret line="116" column="54" lean-forward="true" selection-start-line="116" selection-start-column="54" selection-end-line="116" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,48 +72,56 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/map/Mapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/AllUseCasesResponse.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/GetUseCaseResponse.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding>
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#920#921#0" expanded="true" />
-                <element signature="e#956#957#0" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-                <element signature="e#1266#1267#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-                <element signature="e#1370#1371#0" expanded="true" />
-                <element signature="e#1406#1407#0" expanded="true" />
-                <element signature="e#1434#1435#0" expanded="true" />
-                <element signature="e#1486#1487#0" expanded="true" />
-                <element signature="e#1526#1527#0" expanded="true" />
-                <element signature="e#1560#1561#0" expanded="true" />
-                <element signature="e#1586#1587#0" expanded="true" />
-                <element signature="e#1635#1636#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
+                <element signature="e#1846#1847#0" expanded="true" />
+                <element signature="e#1872#1873#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/EditUseCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-136">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/DeleteUseCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-202">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testJsons/addUseCase.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/FileReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -101,89 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/FilePaths.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testJsons/useCase.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/FileReader.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/UseCaseRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#877#878#0" expanded="true" />
-                <element signature="e#917#918#0" expanded="true" />
-                <element signature="e#943#944#0" expanded="true" />
-                <element signature="e#997#998#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1072#1073#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1207#1208#0" expanded="true" />
-                <element signature="e#1243#1244#0" expanded="true" />
-                <element signature="e#1271#1272#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
-                <element signature="e#1363#1364#0" expanded="true" />
-                <element signature="e#1398#1399#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
-                <element signature="e#1473#1474#0" expanded="true" />
-                <element signature="e#1509#1510#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/UseCaseResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#900#901#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1078#1079#0" expanded="true" />
-                <element signature="e#1114#1115#0" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
-                <element signature="e#1234#1235#0" expanded="true" />
-                <element signature="e#1273#1274#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-                <element signature="e#1362#1363#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-                <element signature="e#1444#1445#0" expanded="true" />
-                <element signature="e#1472#1473#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
-                <element signature="e#1604#1605#0" expanded="true" />
-                <element signature="e#1630#1631#0" expanded="true" />
-                <element signature="e#1684#1685#0" expanded="true" />
-                <element signature="e#1720#1721#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -191,8 +138,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/AddUseCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="153" selection-start-line="153" selection-end-line="153" />
+            <state relative-caret-position="799">
+              <caret line="47" column="15" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,6 +156,16 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>usecase</find>
+      <find>usecaseId</find>
+      <find>usecase_id</find>
+      <find>jovanovic</find>
+      <find>outlook.com</find>
+      <find>joel</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -224,16 +181,25 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/ResetPasswordResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/ResetPasswordErrorResponse.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/LoginJsonTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/ResetPasswordJsonTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/UseCaseResponse.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/FileReader.java" />
         <option value="$PROJECT_DIR$/testJsons/useCase.json" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/FilePaths.java" />
         <option value="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/UseCaseRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/DeleteUseCaseResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/AllUseCasesResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Host.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/EditUseCaseResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/ServiceMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/AddUseCaseRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/FilePaths.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/GetUseCaseResponse.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Methods.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/EditUseCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/AddUseCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/DeleteUseCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/LoginJsonTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/ResetPasswordJsonTest.java" />
       </list>
     </option>
   </component>
@@ -247,8 +213,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -256,6 +222,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,20 +304,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589053071963" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589134400698" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="utils" />
       <recent name="rs.htec.apps.qasandbox.qa.model" />
+      <recent name="utils" />
       <recent name="rs.htec.apps.qasandbox.map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -385,7 +351,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddUseCase.addUseCaseForLoggingInWithCorrectUsernameAndPassword" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteUseCase.deleteAllUseCases" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QASandbox" />
       <extension name="coverage">
         <pattern>
@@ -394,8 +360,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AddUseCase" />
-      <option name="METHOD_NAME" value="addUseCaseForLoggingInWithCorrectUsernameAndPassword" />
+      <option name="MAIN_CLASS_NAME" value="tests.DeleteUseCase" />
+      <option name="METHOD_NAME" value="deleteAllUseCases" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -403,7 +369,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResetPasswordJsonTest.resetPasswordForNonExistingUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EditUseCase.editAllUseCases" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QASandbox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.EditUseCase" />
+      <option name="METHOD_NAME" value="editAllUseCases" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginJsonTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QASandbox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginJsonTest" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResetPasswordJsonTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QASandbox" />
       <extension name="coverage">
         <pattern>
@@ -413,44 +413,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.ResetPasswordJsonTest" />
-      <option name="METHOD_NAME" value="resetPasswordForNonExistingUser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResetPasswordJsonTest.resetPasswordForUsernameInInvalidEmailFormat" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QASandbox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ResetPasswordJsonTest" />
-      <option name="METHOD_NAME" value="resetPasswordForUsernameInInvalidEmailFormat" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResetPasswordJsonTest.resetPasswordWithoutAnEmail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QASandbox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ResetPasswordJsonTest" />
-      <option name="METHOD_NAME" value="resetPasswordWithoutAnEmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -460,10 +422,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.AddUseCase" />
-        <item itemvalue="TestNG.AddUseCase.addUseCaseForLoggingInWithCorrectUsernameAndPassword" />
-        <item itemvalue="TestNG.ResetPasswordJsonTest.resetPasswordForNonExistingUser" />
-        <item itemvalue="TestNG.ResetPasswordJsonTest.resetPasswordForUsernameInInvalidEmailFormat" />
-        <item itemvalue="TestNG.ResetPasswordJsonTest.resetPasswordWithoutAnEmail" />
+        <item itemvalue="TestNG.ResetPasswordJsonTest" />
+        <item itemvalue="TestNG.LoginJsonTest" />
+        <item itemvalue="TestNG.DeleteUseCase.deleteAllUseCases" />
+        <item itemvalue="TestNG.EditUseCase.editAllUseCases" />
       </list>
     </recent_temporary>
   </component>
@@ -481,68 +443,95 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ResetPasswordJsonTest_resetPasswordForNonExistingUser - 2020.05.09 at 18h 15m 26s.xml">
-      <configuration name="ResetPasswordJsonTest.resetPasswordForNonExistingUser" configurationId="TestNG" />
+    <history-entry file="EditUseCase_editAllUseCases - 2020.05.10 at 19h 08m 35s.xml">
+      <configuration name="EditUseCase.editAllUseCases" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ResetPasswordJsonTest_resetPasswordForUsernameInInvalidEmailFormat - 2020.05.09 at 18h 18m 16s.xml">
-      <configuration name="ResetPasswordJsonTest.resetPasswordForUsernameInInvalidEmailFormat" configurationId="TestNG" />
+    <history-entry file="EditUseCase_editAllUseCases - 2020.05.10 at 19h 09m 34s.xml">
+      <configuration name="EditUseCase.editAllUseCases" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ResetPasswordJsonTest_resetPasswordForNonExistingUser - 2020.05.09 at 18h 18m 50s.xml">
-      <configuration name="ResetPasswordJsonTest.resetPasswordForNonExistingUser" configurationId="TestNG" />
+    <history-entry file="EditUseCase_editAllUseCases - 2020.05.10 at 19h 10m 39s.xml">
+      <configuration name="EditUseCase.editAllUseCases" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddUseCase_addUseCaseForLoggingInWithCorrectUsernameAndPassword - 2020.05.09 at 19h 22m 36s.xml">
-      <configuration name="AddUseCase.addUseCaseForLoggingInWithCorrectUsernameAndPassword" configurationId="TestNG" />
+    <history-entry file="DeleteUseCase_deleteAllUseCases - 2020.05.10 at 19h 11m 31s.xml">
+      <configuration name="DeleteUseCase.deleteAllUseCases" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddUseCase_addUseCaseForLoggingInWithCorrectUsernameAndPassword - 2020.05.09 at 19h 34m 58s.xml">
-      <configuration name="AddUseCase.addUseCaseForLoggingInWithCorrectUsernameAndPassword" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddUseCase_addUseCaseForLoggingInWithCorrectUsernameAndPassword - 2020.05.09 at 20h 16m 08s.xml">
-      <configuration name="AddUseCase.addUseCaseForLoggingInWithCorrectUsernameAndPassword" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddUseCase_addUseCaseForLoggingInWithCorrectUsernameAndPassword - 2020.05.09 at 21h 04m 07s.xml">
-      <configuration name="AddUseCase.addUseCaseForLoggingInWithCorrectUsernameAndPassword" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddUseCase_addUseCaseForLoggingInWithCorrectUsernameAndPassword - 2020.05.09 at 21h 05m 53s.xml">
-      <configuration name="AddUseCase.addUseCaseForLoggingInWithCorrectUsernameAndPassword" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AddUseCase - 2020.05.09 at 21h 19m 17s.xml">
+    <history-entry file="AddUseCase - 2020.05.10 at 19h 19m 24s.xml">
       <configuration name="AddUseCase" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AddUseCase - 2020.05.09 at 21h 20m 33s.xml">
+    <history-entry file="EditUseCase_editAllUseCases - 2020.05.10 at 19h 19m 55s.xml">
+      <configuration name="EditUseCase.editAllUseCases" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeleteUseCase_deleteAllUseCases - 2020.05.10 at 19h 20m 29s.xml">
+      <configuration name="DeleteUseCase.deleteAllUseCases" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginJsonTest - 2020.05.10 at 19h 23m 12s.xml">
+      <configuration name="LoginJsonTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ResetPasswordJsonTest - 2020.05.10 at 19h 23m 24s.xml">
+      <configuration name="ResetPasswordJsonTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AddUseCase - 2020.05.10 at 20h 09m 56s.xml">
       <configuration name="AddUseCase" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -555,34 +544,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/http/HTTPRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/http/HTTPResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/LoginErrorResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -614,16 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ResetPasswordJsonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/LoginResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -631,39 +586,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginJsonTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/map/Mapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+        <state relative-caret-position="442">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/FileReader.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testJsons/useCase.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/LoginErrorResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="527">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/FilePaths.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/DeleteUseCaseResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="221">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/UseCaseResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/http/HTTPRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="194">
+          <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="2025" column="18" selection-start-line="2025" selection-start-column="18" selection-end-line="2025" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Host.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#83#84#0" expanded="true" />
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#135#136#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/EditUseCaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
             <element signature="e#900#901#0" expanded="true" />
             <element signature="e#939#940#0" expanded="true" />
             <element signature="e#969#970#0" expanded="true" />
@@ -691,10 +690,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/UseCaseRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/AllUseCasesResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/AddUseCaseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#787#788#0" expanded="true" />
@@ -721,53 +727,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/AllUseCasesResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="204">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding>
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1406#1407#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-            <element signature="e#1486#1487#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1560#1561#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/map/Mapper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/ServiceMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testJsons/addUseCase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/FilePaths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rs/htec/apps/qasandbox/qa/model/GetUseCaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#1872#1873#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/Methods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="76" column="71" lean-forward="true" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
+        <state relative-caret-position="153">
+          <caret line="116" column="54" lean-forward="true" selection-start-line="116" selection-start-column="54" selection-end-line="116" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginJsonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="83" column="78" lean-forward="true" selection-start-line="83" selection-start-column="78" selection-end-line="83" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/DeleteUseCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-202">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/EditUseCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ResetPasswordJsonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -776,8 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/AddUseCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        <state relative-caret-position="799">
+          <caret line="47" column="15" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

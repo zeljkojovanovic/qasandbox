@@ -1,5 +1,5 @@
 package utils;
 
 public class FilePaths {
-  public static final String USE_CASE = "testJsons/useCase.json";
+  public static final String ADD_USE_CASE = "testJsons/addUseCase.json";
 }

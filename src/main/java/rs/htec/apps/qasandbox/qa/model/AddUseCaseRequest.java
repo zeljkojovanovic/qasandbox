@@ -3,7 +3,7 @@ package rs.htec.apps.qasandbox.qa.model;
 import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
-public class UseCaseRequest {
+public class AddUseCaseRequest {
   @SerializedName("title")
   private String title;
   @SerializedName("teststeps")
@@ -15,7 +15,7 @@ public class UseCaseRequest {
   @SerializedName("automated")
   private Boolean automated;
 
-  public UseCaseRequest(String title, List<String> teststeps, String expectedResult,
+  public AddUseCaseRequest(String title, List<String> teststeps, String expectedResult,
       String description, Boolean automated) {
     this.title = title;
     this.teststeps = teststeps;
