@@ -5,7 +5,8 @@ public enum ServiceMethod {
   RESET_PASSWORD("mailer/password-reset"),
   GET_USE_CASE("usecases/"),
   EDIT_USE_CASE("usecases/usecase/"),
-  ALL_USE_CASES("usecases/all");
+  ALL_USE_CASES("usecases/all"),
+  ADD_REPORT("reports/report");
 
   private String method;
 

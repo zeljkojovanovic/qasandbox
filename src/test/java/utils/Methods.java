@@ -14,6 +14,7 @@ import rs.htec.apps.qasandbox.qa.model.LoginResponse;
 import rs.htec.apps.qasandbox.http.HTTPMethod;
 import rs.htec.apps.qasandbox.http.HTTPRequest;
 import rs.htec.apps.qasandbox.http.HTTPResponse;
+import rs.htec.apps.qasandbox.qa.model.ReportIssueRequest;
 import rs.htec.apps.qasandbox.qa.model.ResetPasswordErrorResponse;
 import rs.htec.apps.qasandbox.qa.model.ResetPasswordResponse;
 import rs.htec.apps.qasandbox.qa.model.AddUseCaseRequest;
@@ -65,8 +66,7 @@ public class Methods {
 
   public static EditUseCaseResponse addUseCase(AddUseCaseRequest addUseCaseRequest, String token) throws Exception {
     String url = host.generateUrl(ServiceMethod.EDIT_USE_CASE);
-    HTTPRequest request = new HTTPRequest(url).setMethod(HTTPMethod.POST).setBody(new Gson().toJson(
-        addUseCaseRequest)).setContentType("application/json").setBearerAuthorization(token);
+    HTTPRequest request = new HTTPRequest(url).setMethod(HTTPMethod.POST).setBody(new Gson().toJson(addUseCaseRequest)).setContentType("application/json").setBearerAuthorization(token);
     HTTPResponse response = request.sendRequest();
     if (!response.code.equals(200))
       throw new Exception("Creating use case failed. Code: " + response.getCode() + " | Message: " + response.getBody());
@@ -123,5 +123,12 @@ public class Methods {
     if (!response.code.equals(200))
       throw new Exception("Editing of use case failed. Code: " + response.getCode() + " | Message: " + response.getBody());
     return mapFromJSON(response.body, EditUseCaseResponse.class);
+  }
+
+  public static void reportIssue(String token, ReportIssueRequest reportIssueRequest) throws Exception {
+    String url = host.generateUrl(ServiceMethod.ADD_REPORT);
+    HTTPRequest request = new HTTPRequest(url).setMethod(HTTPMethod.POST).setBody(new Gson().toJson(reportIssueRequest)).setContentType("application/json").setBearerAuthorization(token);
+    HTTPResponse response = request.sendRequest();
+    if (!response.code.equals(200)) throw new Exception("Reporting issue failed. Code: " + response.getCode() + " | Message: " + response.getBody());
   }
 }

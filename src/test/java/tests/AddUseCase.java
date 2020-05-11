@@ -24,14 +24,6 @@ public class AddUseCase {
   private List<String> testStepsList;
   private boolean automated;
 
-  private void setBodyForAddingUseCase (AddUseCaseRequest addUseCaseRequest, String title, String description, String expectedResult, List<String> testStepsList, boolean automated) {
-    addUseCaseRequest.setTitle(title);
-    addUseCaseRequest.setDescription(description);
-    addUseCaseRequest.setExpectedResult(expectedResult);
-    addUseCaseRequest.setTeststeps(testStepsList);
-    addUseCaseRequest.setAutomated(automated);
-  }
-
   private void verifyThatUseCaseIsAdded(String token, String title, String description, String expectedResult, boolean automated) throws Exception {
     List<AllUseCasesResponse> allUseCases = Methods.retrieveAllUseCases(token);
     for (AllUseCasesResponse aUC : allUseCases) {
@@ -66,7 +58,7 @@ public class AddUseCase {
         "Enter correct password in 'Password' field - password that matches entered email.",
         "Click on 'Submit' button."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -85,7 +77,7 @@ public class AddUseCase {
         "Enter correct username (e.g. 'jovanovic.zeljko@outlook.com') in 'email' field.",
         "Click on 'Submit' button without entering any password."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -104,7 +96,7 @@ public class AddUseCase {
         "Enter a password that belongs to a registered user in 'Password' field.",
         "Click on 'Submit' button without entering an email address."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -122,7 +114,7 @@ public class AddUseCase {
         "Click on 'Login' button.",
         "Click on 'Submit' button without entering email address or password."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -142,7 +134,7 @@ public class AddUseCase {
         "Enter invalid password that does not have 6 characters in 'Password' field (e.g. 'abc12').",
         "Click on 'Submit' button."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -150,7 +142,7 @@ public class AddUseCase {
   }
 
   @Test
-  public void logInWithPasswordThatHasAtLeastSixCharacters() throws Exception {
+  public void logInWithInvalidPasswordThatHasAtLeastSixCharacters() throws Exception {
     //initialize title, description, expected result and test steps:
     title = "Login with invalid password that has at least six characters";
     description = "Verify that user is not able to login with correct username, but with password that does not match entered username. Invalid password has at least 6 characters.";
@@ -162,7 +154,7 @@ public class AddUseCase {
         "Enter invalid password that has at least 6 characters in 'Password' field (e.g. 'Test1234').",
         "Click on 'Submit' button."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -182,7 +174,7 @@ public class AddUseCase {
         "Enter a string that has at least 6 characters in 'Password' field (e.g. 'Test1234').",
         "Click on 'Submit' button."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -202,7 +194,7 @@ public class AddUseCase {
         "Enter a string that has at least 6 characters in 'Password' field (e.g. 'Test1234').",
         "Click on 'Submit' button."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -222,10 +214,10 @@ public class AddUseCase {
         "Click on 'Submit' button.",
         "Open 'QA Sandbox Password Reset' email.",
         "Click on 'Change Password' button.",
-        "Enter same values in 'password' and 'change password' fields.",
+        "Enter same values in 'password' and 'change password' fields (values are at least six characters long).",
         "Click on 'Submit' button."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -243,7 +235,7 @@ public class AddUseCase {
         "Click on 'Forget password' button.",
         "Click on 'Submit' button without entering an email address."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -262,7 +254,7 @@ public class AddUseCase {
         "Enter non existing username in 'email' field (e.g. 'jovanovic.zeljko@outlook1.com').",
         "Click on 'Submit' button."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
@@ -281,7 +273,121 @@ public class AddUseCase {
         "Enter an username that is not in valid email format (e.g. 'aaa@aaa').",
         "Click on 'Submit' button."));
     //set body for adding new use case:
-    setBodyForAddingUseCase(addUseCaseRequest, title, description, expectedResult, testStepsList, automated);
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
+    //add use case:
+    Methods.addUseCase(addUseCaseRequest, token);
+    //get newly added use case and verify it has entered values:
+    verifyThatUseCaseIsAdded(token, title, description, expectedResult, automated);
+  }
+
+  @Test
+  public void resetPasswordWithEmptyPasswordFields() throws Exception {
+    //initialize title, description, expected result and test steps:
+    title = "Reset password with empty 'password' and 'confirm password' fields";
+    description = "Verify that user is not able to reset password without entering and confirming password";
+    expectedResult = "Error message 'Password is required' is displayed for 'password' field. "
+        + "Error message 'Confirm password is required' is displayed for 'confirm password' field";
+    testStepsList = new ArrayList<>(Arrays.asList(
+        "Go to https://qa-sandbox.apps.htec.rs",
+        "Click on 'Forget password' button.",
+        "Enter existing username in 'Email Address' field (e.g. 'jovanovic.zeljko@outlook.com').",
+        "Click on 'Submit' button.",
+        "Open 'QA Sandbox Password Reset' email.",
+        "Click on 'Change Password' button.",
+        "Click on 'Submit' button without entering passwords."));
+    //set body for adding new use case:
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
+    //add use case:
+    Methods.addUseCase(addUseCaseRequest, token);
+    //get newly added use case and verify it has entered values:
+    verifyThatUseCaseIsAdded(token, title, description, expectedResult, automated);
+  }
+
+  @Test
+  public void resetPasswordWithEmptyPasswordField() throws Exception {
+    //initialize title, description, expected result and test steps:
+    title = "Reset password with empty 'password' field";
+    description = "Verify that user is not able to reset password without entering value in 'password' field";
+    expectedResult = "Error message 'Password is required' is displayed for 'password' field.";
+    testStepsList = new ArrayList<>(Arrays.asList(
+        "Go to https://qa-sandbox.apps.htec.rs",
+        "Click on 'Forget password' button.",
+        "Enter existing username in 'Email Address' field (e.g. 'jovanovic.zeljko@outlook.com').",
+        "Click on 'Submit' button.",
+        "Open 'QA Sandbox Password Reset' email.",
+        "Click on 'Change Password' button.",
+        "Enter a value in 'confirm password' field",
+        "Click on 'Submit' button without entering value in 'password' field."));
+    //set body for adding new use case:
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
+    //add use case:
+    Methods.addUseCase(addUseCaseRequest, token);
+    //get newly added use case and verify it has entered values:
+    verifyThatUseCaseIsAdded(token, title, description, expectedResult, automated);
+  }
+
+  @Test
+  public void resetPasswordWithEmptyConfirmPasswordField() throws Exception {
+    //initialize title, description, expected result and test steps:
+    title = "Reset password with empty 'confirm password' field";
+    description = "Verify that user is not able to reset password without entering value in 'confirm password' field";
+    expectedResult = "Error message 'Confirm password is required' is displayed for 'confrim password' field.";
+    testStepsList = new ArrayList<>(Arrays.asList(
+        "Go to https://qa-sandbox.apps.htec.rs",
+        "Click on 'Forget password' button.",
+        "Enter existing username in 'Email Address' field (e.g. 'jovanovic.zeljko@outlook.com').",
+        "Click on 'Submit' button.",
+        "Open 'QA Sandbox Password Reset' email.",
+        "Click on 'Change Password' button.",
+        "Enter string that has at least six characters in 'password' field (e.g. 'Test1234').",
+        "Click on 'Submit' button without entering value in 'Confirm password field'."));
+    //set body for adding new use case:
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
+    //add use case:
+    Methods.addUseCase(addUseCaseRequest, token);
+    //get newly added use case and verify it has entered values:
+    verifyThatUseCaseIsAdded(token, title, description, expectedResult, automated);
+  }
+
+  @Test
+  public void resetPasswordWithPasswordThatDoesNotHaveSixCharacters() throws Exception {
+    //initialize title, description, expected result and test steps:
+    title = "Reset password with password that does not have six characters";
+    description = "Verify that user is not able to reset password with password that does not have six characters";
+    expectedResult = "Error message 'Password must be at least 6 characters long' is displayed for 'password' field.";
+    testStepsList = new ArrayList<>(Arrays.asList(
+        "Go to https://qa-sandbox.apps.htec.rs",
+        "Click on 'Forget password' button.",
+        "Enter existing username in 'Email Address' field (e.g. 'jovanovic.zeljko@outlook.com').",
+        "Click on 'Submit' button.",
+        "Open 'QA Sandbox Password Reset' email.",
+        "Enter string that does not have six characters in 'password' field (e.g. 'abc12').",
+        "Click on 'Submit' button."));
+    //set body for adding new use case:
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
+    //add use case:
+    Methods.addUseCase(addUseCaseRequest, token);
+    //get newly added use case and verify it has entered values:
+    verifyThatUseCaseIsAdded(token, title, description, expectedResult, automated);
+  }
+
+  @Test
+  public void resetPasswordWithNonMatchingPasswords() throws Exception {
+    //initialize title, description, expected result and test steps:
+    title = "Reset password with non matching passwords";
+    description = "Verify that user is not able to reset password with non matching 'password' and 'confirm password' values.";
+    expectedResult = "Error message 'Confirm password must match password' is displayed.";
+    testStepsList = new ArrayList<>(Arrays.asList(
+        "Go to https://qa-sandbox.apps.htec.rs",
+        "Click on 'Forget password' button.",
+        "Enter existing username in 'Email Address' field (e.g. 'jovanovic.zeljko@outlook.com').",
+        "Click on 'Submit' button.",
+        "Open 'QA Sandbox Password Reset' email.",
+        "Enter string that has at least six characters in 'password' field (e.g. 'Test1234').",
+        "Enter string in 'confirm password' field that is not the same as value entered in 'password' field (e.g. 'Test123').",
+        "Click on 'Submit' button."));
+    //set body for adding new use case:
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
     Methods.addUseCase(addUseCaseRequest, token);
     //get newly added use case and verify it has entered values:
