@@ -45,12 +45,12 @@ public class HTTPRequest {
 	}
 
 	public HTTPRequest()  { }
-	
+
 	public HTTPRequest setUrl(String url) {
 		this.url = url;
 		return this;
 	}
-	
+
 	public HTTPRequest(URL url)  {
 		this.url = url.toString();
 	}
@@ -129,9 +129,6 @@ public class HTTPRequest {
 		if(res.getEntity()!= null) {
 			InputStreamReader isr = new InputStreamReader(res.getEntity().getContent(), Charset.forName("UTF-8"));
 			BufferedReader br = new BufferedReader(isr);
-			// Next two lines should be replaced with third line
-			//String line = "";
-			//while((line = br.readLine()) != null) response_body.append(line);
 			body = br.lines().collect(Collectors.joining("\n"));
 		}
 		response.body = body;

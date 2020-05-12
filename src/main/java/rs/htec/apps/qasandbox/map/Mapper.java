@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.*;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 public class Mapper {

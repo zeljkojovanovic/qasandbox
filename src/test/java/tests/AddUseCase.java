@@ -24,6 +24,7 @@ public class AddUseCase {
   private List<String> testStepsList;
   private boolean automated;
 
+  //method for verifying that use case is indeed added:
   private void verifyThatUseCaseIsAdded(String token, String title, String description, String expectedResult, boolean automated) throws Exception {
     List<AllUseCasesResponse> allUseCases = Methods.retrieveAllUseCases(token);
     for (AllUseCasesResponse aUC : allUseCases) {
@@ -37,11 +38,14 @@ public class AddUseCase {
 
   @BeforeClass
   public void init() throws Exception {
+    //get token:
     String username = User.USER_ZELJKO.getUsername();
     String password = User.USER_ZELJKO.getPassword();
     LoginResponse loginResponse = Methods.login(username, password);
     token = loginResponse.getToken();
+    //initialize body of request for adding use case:
     addUseCaseRequest = FileReader.readFileFromPathAndDeserialize(FilePaths.ADD_USE_CASE, AddUseCaseRequest.class);
+    //initialize 'automated' value:
     automated = true;
   }
 
@@ -190,9 +194,30 @@ public class AddUseCase {
     testStepsList = new ArrayList<>(Arrays.asList(
         "Go to https://qa-sandbox.apps.htec.rs",
         "Click on 'Login' button.",
-        "Enter an username in 'email' field that is in invalid email format (e.g. 'sss@sss')..",
+        "Enter an username in 'email' field that is in invalid email format (e.g. 'sss@sss').",
         "Enter a string that has at least 6 characters in 'Password' field (e.g. 'Test1234').",
         "Click on 'Submit' button."));
+    //set body for adding new use case:
+    addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
+    //add use case:
+    Methods.addUseCase(addUseCaseRequest, token);
+    //get newly added use case and verify it has entered values:
+    verifyThatUseCaseIsAdded(token, title, description, expectedResult, automated);
+  }
+
+  @Test
+  public void lockAccountAfterFiveUnsuccessfulAttempts() throws Exception {
+    //initialize title, description, expected result and test steps:
+    title = "Lock account after five unsuccessful attempts";
+    description = "Verify that account is locked after five unsuccessful attempts.";
+    expectedResult = "After each unsuccessful attempt, application displays how many attempts are left. "
+        + "Account is locked after five unsuccessful attempts and user cannot login even with correct password";
+    testStepsList = new ArrayList<>(Arrays.asList(
+        "Go to https://qa-sandbox.apps.htec.rs",
+        "Click on 'Login' button.",
+        "Enter valid username in 'email' field (e.g. 'jovanovic.zeljko@outlook.com').",
+        "Enter a string that has at least 6 characters in 'Password' field (e.g. 'Test1234').",
+        "Click on 'Submit' button five times."));
     //set body for adding new use case:
     addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
     //add use case:
@@ -293,7 +318,7 @@ public class AddUseCase {
         "Enter existing username in 'Email Address' field (e.g. 'jovanovic.zeljko@outlook.com').",
         "Click on 'Submit' button.",
         "Open 'QA Sandbox Password Reset' email.",
-        "Click on 'Change Password' button.",
+        "Click on 'Change Password' button in the email.",
         "Click on 'Submit' button without entering passwords."));
     //set body for adding new use case:
     addUseCaseRequest = new AddUseCaseRequest(title, testStepsList, expectedResult, description, automated);
@@ -315,7 +340,7 @@ public class AddUseCase {
         "Enter existing username in 'Email Address' field (e.g. 'jovanovic.zeljko@outlook.com').",
         "Click on 'Submit' button.",
         "Open 'QA Sandbox Password Reset' email.",
-        "Click on 'Change Password' button.",
+        "Click on 'Change Password' button in the email.",
         "Enter a value in 'confirm password' field",
         "Click on 'Submit' button without entering value in 'password' field."));
     //set body for adding new use case:
@@ -338,7 +363,7 @@ public class AddUseCase {
         "Enter existing username in 'Email Address' field (e.g. 'jovanovic.zeljko@outlook.com').",
         "Click on 'Submit' button.",
         "Open 'QA Sandbox Password Reset' email.",
-        "Click on 'Change Password' button.",
+        "Click on 'Change Password' button in the email.",
         "Enter string that has at least six characters in 'password' field (e.g. 'Test1234').",
         "Click on 'Submit' button without entering value in 'Confirm password field'."));
     //set body for adding new use case:
@@ -361,6 +386,7 @@ public class AddUseCase {
         "Enter existing username in 'Email Address' field (e.g. 'jovanovic.zeljko@outlook.com').",
         "Click on 'Submit' button.",
         "Open 'QA Sandbox Password Reset' email.",
+        "Click on 'Change Password' button in the email.",
         "Enter string that does not have six characters in 'password' field (e.g. 'abc12').",
         "Click on 'Submit' button."));
     //set body for adding new use case:
@@ -383,6 +409,7 @@ public class AddUseCase {
         "Enter existing username in 'Email Address' field (e.g. 'jovanovic.zeljko@outlook.com').",
         "Click on 'Submit' button.",
         "Open 'QA Sandbox Password Reset' email.",
+        "Click on 'Change Password' button in the email.",
         "Enter string that has at least six characters in 'password' field (e.g. 'Test1234').",
         "Enter string in 'confirm password' field that is not the same as value entered in 'password' field (e.g. 'Test123').",
         "Click on 'Submit' button."));

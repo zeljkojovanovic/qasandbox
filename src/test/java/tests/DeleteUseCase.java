@@ -20,6 +20,7 @@ public class DeleteUseCase {
 
   @BeforeClass
   public void init() throws Exception {
+    //get token:
     username = User.USER_ZELJKO.getUsername();
     password = User.USER_ZELJKO.getPassword();
     LoginResponse loginResponse = Methods.login(username, password);
